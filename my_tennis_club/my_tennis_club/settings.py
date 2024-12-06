@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-s!o02wl#-txvt+b9#g%0$k3cfrx$-9$f#akr2^7#2tg1w_@q32
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "members"
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ TEMPLATES = [
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [],
         "APP_DIRS": True,
-        "OPTIONS": {
+        "OPTIONS": { 
             "context_processors": [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
